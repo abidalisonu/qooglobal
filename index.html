@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QOO Global DMCC</title>
+    <style type="text/css">
+        body {
+            margin: auto;
+            color: #212529;
+        }
+        .navbar {
+            margin: 5px 40px;
+        }
+        .links {
+            float: right;
+        }
+        .links li {
+            list-style: none;
+            display: inline;
+            margin-left: 20px;
+        }
+        .links li a {
+            text-decoration: none;
+            color: #555b67;
+            font-size: 120%;
+        }
+        .slide {
+            display: none;
+            position: relative;
+        }
+        .slide-text {
+            position: absolute;
+            bottom: 10%;
+            left: 150px;
+        }
+        .slide-text h1 {
+            color: white;
+        }
+        .slide-text span {
+            font-size: 500%;
+            color: white;
+            display: block;
+        }
+        .slide img {
+            width:100%;
+            height: calc(100vh - 50px);
+        }
+        #about div {
+            width: 50%;
+            display: inline;
+        }
+        .section-heading {
+            border-left: 3px solid #d0d0d0;
+            padding: 50px 20px;
+        }
+        .section-heading span, .inner-heading span {
+            font-size: 300%;
+        }
+        .section-text {
+            float: right;
+        }
+        .section-text span {
+            font-size: 200%;
+        }
+        #collaborated {
+            margin-top: 200px;
+        }
+        .collaboration-images {
+            background-color: #e5e3e3;
+        }
+        .collaboration-images img {
+            margin: 24px 10px;
+            width: 23%;
+        }
+        .two-images img {
+            width: 49%;
+            height: 300px;
+        }
+        .three-images img {
+            width: 33%;
+            height: 300px;
+        }
+        .container {
+            width: 1140px;
+            margin: 50px auto;
+        }
+        .boxes {
+            margin: 50px 150px;
+        }
+        .box {
+            border-left: 1px solid #d0d0d0;
+            border-right: 1px solid #d0d0d0;
+            border-bottom: 5px solid #d0d0d0;
+            width: 25%;
+            display: inline-block;
+            padding: 15px;
+            margin: 10px;
+        }
+        .box img {
+            width: 100%;
+        }
+        #why-work {
+            background-image: url('/qooglobal/resources/8c7c5bcc1bdead060f35e224ec4b1798');
+            width: 100%;
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .why-text {
+            position: absolute;
+            top: 50%;
+            color: white;
+        }
+        .why-text > span {
+            font-size: 500%;
+        }
+        .why-text > ul li span {
+            font-size: 150%;
+        }
+        .why-text > ul {
+            padding-left: 10px;
+        }
+        .why-text > ul li {
+            list-style: none;
+        }
+        .why-text > ul li img {
+            width: 25px;
+        }
+        .career-boxes {
+            margin: 50px 0;
+        }
+        .career-boxes > div {
+            background-color: #807fbd;
+            width: 37%;
+            padding: 45px;
+            padding-bottom: 70px;
+            display: inline-block;
+            margin: 25px;
+        }
+        .career-heading {
+            width: 50%;
+        }
+        .career-heading img {
+            width: 100px;
+        }
+        .career-heading span {
+            font-size: 150%;
+            color: white;
+            margin-left: 15px;
+        }
+        .career-boxes > div p {
+            color: white;
+        }
+        .career-boxes > div a {
+            padding: 15px 25px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            border-radius: 25px;
+            float: right;
+        }
+        #contact {
+            background-image: url('/qooglobal/resources/dda3277073d930b59adaa2ba5476d73c');
+            width: 100%;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        #contact .heading {
+            width: 50%;
+            position: absolute;
+            top: 50%;
+        }
+        #contact .heading span {
+            color: white;
+            font-size: 300%;
+        }
+        #contact .form {
+            width: 50%;
+            float: right;
+            margin-top: 50px;
+            color: white;
+        }
+        #contact .form span {
+            font-size: 200%;
+        }
+        .form-row .form-group {
+            width: 46%;
+            display: inline-block;
+        }
+        .form-group {
+            margin: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            height: 50px;
+        }
+        #contact .form button {
+            padding: 15px 25px;
+            color: black;
+            background-color: white;
+            border-radius: 25px;
+        }
+        #map {
+            padding-top: 60px;
+        }
+        .footer {
+            padding: 25px;
+        }
+        .footer span {
+            float: right;
+            margin-bottom: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="/qooglobal/resources/346eaa5e3153ca86388fc1bc67309ce4" width="100">
+        <ul class="links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#what-we-do">Services</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="slider">
+        <div class="slide">
+            <div class="slide-text">
+                <h1>We Are Your New</h1>
+                <span>Digital Creative</span>
+                <span>Agency</span>
+            </div>
+            <img src="/qooglobal/resources/beec35e20cc0c905791ad2159a42ba98">
+        </div>
+        <div class="slide">
+            <div class="slide-text">
+                <span>Brilliant</span>
+                <span>Thinking</span>
+                <span>Made Visual.</span>
+            </div>
+            <img src="/qooglobal/resources/422ddd063d088ebae830a427c65a02ca">
+        </div>
+        <div class="slide">
+            <div class="slide-text">
+                <span>Build Your</span>
+                <span>Way To Success</span>
+                <span>With Us!</span>
+            </div>
+            <img src="/qooglobal/resources/6d0d4d5a2d5fbeb3f578b839d56bd667">
+        </div>
+    </div>
+    <div id="about" class="container">
+        <div class="section-heading">
+            <span>About Us</span>
+        </div>
+        <div class="section-text">
+            <span>QOO Global, is a digital marketing agency based in Dubai. We specialize in B2B, B2C, SMM and SEO marketing, with a bit of creative flair sprinkled on top. </span>
+        </div>
+    </div>
+    <div id="collaborated">
+        <div class="inner-heading container">
+            <span>We collaborated with</span>
+        </div>
+        <div class="collaboration-images">
+            <img src="/qooglobal/resources/e1ef1f8d82cc4049a0389a087802abef">
+            <img src="/qooglobal/resources/1ed23daa4b79b2fbbc85dda9010ff9ef">
+            <img src="/qooglobal/resources/ebae364c538ac66ea68cd0beb29aff5e">
+            <img src="/qooglobal/resources/b73f8783ec4db89d9ea41ea826bf5ae5">
+        </div>
+    </div>
+    <div id="what-we-do">
+        <div class="section-heading container">
+            <span>What We Do Best</span>
+        </div>
+        <div class="two-images">
+            <img src="/qooglobal/resources/174a860374d55366941454ed1c4388df">
+            <img src="/qooglobal/resources/ba20cc4a114acfa2c901ed6e49f0f2f5">
+        </div>
+        <div class="three-images">
+            <img src="/qooglobal/resources/faa3dc31f4b6110806c91ce102de8051">
+            <img src="/qooglobal/resources/788f8a47cf35b4cfbef9117d7e453e0e">
+            <img src="/qooglobal/resources/7aef4d5b25475e0ad513bdcc1dc39772">
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-heading">
+            <span>Why Choose Us</span>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <img src="/qooglobal/resources/horn.png">
+                <p>Our clients are our property</p>
+            </div>
+            <div class="box">
+                <img src="/qooglobal/resources/bulb.png">
+                <p>High quality standard design</p>
+            </div>
+            <div class="box">
+                <img src="/qooglobal/resources/rocket.png">
+                <p>Our mission is your success</p>
+            </div>
+        </div>
+    </div>
+    <div id="why-work">
+        <div class="container">
+            <div class="why-text">
+                <span>Why work at Qoo Global?</span>
+                <ul>
+                    <li>
+                        <img src="/qooglobal/resources/checked-white.svg">
+                        <span>We’re Growing: Our team is growing rapidly, and we always</span>
+                    </li>
+                    <li>
+                        <img src="/qooglobal/resources/checked-white.svg">
+                        <span>We support and challenge each other, and everyone’s all the better for it.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="careers" class="container">
+        <div class="section-heading">
+            <span>Careers</span>
+        </div>
+        <div class="career-boxes">
+            <div>
+                <div class="career-heading">
+                    <img src="/qooglobal/resources/09c1c18450bbde68872c766fe55b890f">
+                    <span>Internships</span>
+                </div>
+                <p>Join us and become a part of a multi national team. You’re an intern in name only ...</p>
+                <a href="/qooglobal/job.html">Apply Now</a>
+            </div>
+            <div>
+                <div class="career-heading">
+                    <img src="/qooglobal/resources/09c1c18450bbde68872c766fe55b890f">
+                    <span>Internships</span>
+                </div>
+                <p>Join us and become a part of a multi national team. You’re an intern in name only ...</p>
+                <a href="/qooglobal/job.html">Apply Now</a>
+            </div>
+            <div>
+                <div class="career-heading">
+                    <img src="/qooglobal/resources/09c1c18450bbde68872c766fe55b890f">
+                    <span>Internships</span>
+                </div>
+                <p>Join us and become a part of a multi national team. You’re an intern in name only ...</p>
+                <a href="/qooglobal/job.html">Apply Now</a>
+            </div>
+            <div>
+                <div class="career-heading">
+                    <img src="/qooglobal/resources/09c1c18450bbde68872c766fe55b890f">
+                    <span>Internships</span>
+                </div>
+                <p>Join us and become a part of a multi national team. You’re an intern in name only ...</p>
+                <a href="/qooglobal/job.html">Apply Now</a>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="heading">
+                <span>Let's Talk</span>
+            </div>
+            <div class="form">
+                <span>What's on your mind?</span>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First name</label>
+                            <input type="text" name="">
+                        </div>
+                        <div class="form-group">
+                            <label>Last name</label>
+                            <input type="text" name="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email address</label><br>
+                        <input type="email" name="">
+                    </div>
+                    <div class="form-group">
+                        <label>What can we help you with?</label>
+                        <textarea rows="5"></textarea>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        <iframe
+            width="100%"
+            height="450"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <div class="footer">
+            <span>Copyright © 2022. All Rights Reserved.</span>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
